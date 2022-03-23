@@ -6,13 +6,13 @@ const game = new Phaser.Game(800, 600, Phaser.AUTO, "corona-invasores", {
 });
 
 function preload() {
-  game.load.image("syringe", "assets/syringe-32x32.png");
-  game.load.image("bullet", "assets/pill-25x25.png");
-  game.load.image("enemyBullet", "assets/microbe-15x15.png");
-  game.load.image("invader", "assets/microbe-32x32.png");
-  game.load.image("ship", "assets/hospital-32x32.png");
+  game.load.image("jeringa", "assets/syringe-32x32.png");
+  game.load.image("pildoras", "assets/pill-25x25.png");
+  game.load.image("balasenemigas", "assets/microbe-15x15.png");
+  game.load.image("invasor", "assets/microbe-32x32.png");
+  game.load.image("defensor", "assets/hospital-32x32.png");
   game.load.image("kaboom", "assets/collision-32x32.png");
-  game.load.image("starfield", "assets/starfield.png");
+  game.load.image("fondo", "assets/starfield.png");
 }
 
 const puntajeString = "Puntaje : ";
@@ -43,7 +43,7 @@ function create() {
     0,
     game.world.width,
     game.world.height,
-    "starfield"
+    "fondo"
   );
 
   //  Our bullet group
@@ -101,7 +101,7 @@ function create() {
 
   for (let i = 3; i > 0; i--) {
     let x = game.world.width - 120 + 30 * i;
-    let ship = vidas.create(x, 30, "syringe");
+    let ship = vidas.create(x, 30, "jeringa");
     ship.anchor.setTo(0.5, 0.5);
   }
 
