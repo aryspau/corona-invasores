@@ -1,4 +1,4 @@
-const game = new Phaser.Game(800, 600, Phaser.AUTO, "emoji-invaders", {
+const game = new Phaser.Game(800, 600, Phaser.AUTO, "corona-invasores", {
   preload: preload,
   create: create,
   update: update,

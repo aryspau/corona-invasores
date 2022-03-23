@@ -1,0 +1,22 @@
+{
+  "name": "corona-invasores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "invaders.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryspau/corona-invasores.git"
+  },
+  "author": "Arisleidy Paulino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aryspau/corona-invasores/issues"
+  },
+  "homepage": "https://github.com/aryspau/corona-invasores#readme",
+  "dependencies": {
+    "phaser-ce": "^2.19.2"
+  }
+}
